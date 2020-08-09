@@ -126,7 +126,7 @@ class AddRequestForm extends Component {
 
                     <div className='requestform_div'>
                         <label>Message : </label>
-                        <textarea  className='form_field' value={this.state.message} onChange={this.changemessage}></textarea>
+                        <textarea rows="3" cols="50" className='form_field' value={this.state.message} onChange={this.changemessage}></textarea>
                     </div>
                     { this.state.formerror && <div className='requestform_div'><span className='errormsgspan'>Please enter all details.</span></div> }
                     <div className='requestform_div'>

@@ -10,12 +10,18 @@ const Login = (props) => {
     const [name , changeName ] = useState('')
     const [password , changepassword ] = useState('')
     const [error , setError] = useState(false)
+    const [loading , setLoading] = useState(false)
 
     let handleSubmit = async (e) => { 
-          e.preventDefault();
-          let res = await props.userlogin({ userid : name, password })
+          setLoading(true)
+          e.preventDefault(); 
+            let res = await props.userlogin({ userid : name, password })
           if(!res)
-          setError(true)
+          {
+              setError(true)
+              setLoading(false)              
+          }
+          res && setLoading(false) 
     }
   
     if(props.isAuthenticated) {  
@@ -41,8 +47,11 @@ const Login = (props) => {
                             <input className='login_input' type='password' value={password} onChange={(e)=>changepassword(e.target.value)} placeholder='Password' required/>
                         </div>
                         { error && <div><span className='errormsgspan'>Invalid Credentials!! Please Try again</span></div> }
+
                         <div>
-                            <Button type='submit'>Log In</Button>
+                            <Button type='submit'>
+                                Log In { loading &&  <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            }</Button>                            
                         </div>
                         </div>
                     </form> 
