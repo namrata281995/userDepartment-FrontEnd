@@ -15,13 +15,10 @@ const Notification = (props) => {
           props.notifconfig.setCountofNotifications(0)
     }
  
-    useEffect(() => {
-        console.log(props.notifconfig.count)
-        console.log('use effect notification')
+    useEffect(() => { 
         if(props.notifconfig.count > 0)
         settoastdata((data) => { 
-            data.push(props.notifconfig.notifdata)
-            console.log(data)
+            data.push(props.notifconfig.notifdata) 
            return data
         })
     }, [props.notifconfig.count])
