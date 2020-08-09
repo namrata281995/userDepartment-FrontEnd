@@ -40,7 +40,7 @@ const Login = (props) => {
                         <div className='loginform'>
                         <div>
                             <label>UserID : </label>
-                            <input className='login_input' type='text' value={name} onChange={(e)=>changeName(e.target.value)} placeholder='UserName' required/>
+                            <input className='login_input' type='text' value={name} onChange={(e)=>changeName(e.target.value)} placeholder='UserID' required/>
                         </div>
                         <div>
                             <label>Password : </label>
