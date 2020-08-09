@@ -5,7 +5,7 @@ import { Link, Redirect } from 'react-router-dom'
 import socket from '../../socket/socket'
 import { userlogout } from '../../store/actions/user'
 import './header.css' 
-import { Badge } from 'react-bootstrap'; 
+import { Badge, Container } from 'react-bootstrap'; 
  
 
 function Header(props) {
@@ -39,9 +39,7 @@ function Header(props) {
   if(props.isAuthenticated) {
     joinsocket()
 
-  return (
-
-    //Make use of NavLink from react-bootstrap
+  return ( 
     <div className="header">
       <div className='leftheader'>
         <div className='requestheader' onClick={()=>showcurrBadge('formbadge')}>

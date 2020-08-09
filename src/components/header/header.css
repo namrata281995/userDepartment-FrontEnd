@@ -49,3 +49,18 @@
 .formbadge{
     display: block;
 }
+@media screen and (max-width: 70rem) {
+    .header{
+        height: 20rem;
+    }
+
+    .requestheader{ 
+        margin : 1.1rem; 
+        display: flex;
+    }
+
+    
+    .leftheader{
+        flex-direction: column;
+    }
+}

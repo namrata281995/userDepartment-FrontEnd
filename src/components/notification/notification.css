@@ -1,3 +1,8 @@
 .notificationdiv{
     display: flex;
 }
+
+.toast{
+    position: relative; 
+    z-index: 100;
+}
