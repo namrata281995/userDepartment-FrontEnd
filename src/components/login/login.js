@@ -33,7 +33,7 @@ const Login = (props) => {
                     <form onSubmit={handleSubmit}>
                         <div className='loginform'>
                         <div>
-                            <label>Username : </label>
+                            <label>UserID : </label>
                             <input className='login_input' type='text' value={name} onChange={(e)=>changeName(e.target.value)} placeholder='UserName' required/>
                         </div>
                         <div>
