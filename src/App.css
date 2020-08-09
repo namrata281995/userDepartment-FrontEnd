@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: cursive;
 }
 
 .App-logo {
@@ -35,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card{
+  border-color: #a9a9a9!important;
 }

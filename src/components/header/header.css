@@ -1,0 +1,51 @@
+.header {
+    height : 5em;
+    background-color: #0e78fa;  
+    display: flex; 
+    justify-content : space-between;
+}
+
+.headerName {
+    font-size: 2rem;
+    margin-top : 0.5rem;
+}
+
+.requestheader{ 
+    margin : 2rem; 
+    display: flex;
+}
+
+.logoutheader{
+    margin : 2rem;  
+    align-self: self-end;
+}
+
+.headerspan{
+    color: white;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.leftheader{
+    display: flex;
+}
+
+.rightheader {
+    display: flex;
+}
+.notifheader{
+    margin: 1.2rem;
+}
+.userheader{
+    margin : 1rem;
+}
+.badgespan{
+    color: wh;
+}
+.headerbadge{
+    display: none;
+    font-size: 12px;
+}
+.formbadge{
+    display: block;
+}

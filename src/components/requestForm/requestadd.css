@@ -1,0 +1,22 @@
+.dropdown_div{
+    display: flex;
+    margin : 1rem;
+}
+
+.addrequestform{
+    margin : 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.requestform_div{
+    display: flex;
+    margin : 1rem;
+}
+
+.form_field{
+    margin-left: 0.5rem;
+}
+.form_card{
+    margin : 1.5rem; 
+}
